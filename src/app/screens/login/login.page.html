@@ -1,0 +1,14 @@
+<ion-content class="ion-padding">
+  <h1>Welcome,</h1>
+  <h3>Sign in to continue!</h3>
+
+  <form [formGroup]="LoginForm" autocomplete="off">
+    <app-input label="Email ID" type="text" formControlName="Username"></app-input>
+    <app-input label="Password" type="password" formControlName="Password"></app-input>
+    <a routerLink="#" hred="javascript:void(0)" class="forgot-password-link">Forgot Password?</a>
+    <app-button label='Login' (click)="onLogin()"></app-button>
+    <app-icon-button icon='logo-facebook' label='Connect with Facebook'></app-icon-button>
+  </form>
+
+  <p class="footer-text">I'm a new user, <a routerLink="#">Sign Up</a></p>
+</ion-content>

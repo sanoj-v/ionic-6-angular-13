@@ -1,0 +1,93 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import "./theme/fonts.scss";
+@import "./theme/loader.scss";
+
+
+* {
+    font-family: Gilroy;
+  }
+  ion-icon {
+    font-size: 1.6rem;
+  }
+  ion-padding {
+    --padding-start: var(--ion-padding, 20px);
+    --padding-end: var(--ion-padding, 20px);
+    --padding-top: var(--ion-padding, 16px);
+    --padding-bottom: var(--ion-padding, 10px);
+  }
+  
+  .custom-loader {
+    --background: transparent;
+    ion-backdrop {
+      background-color: #fff;
+      opacity: 0.9 !important;
+    }
+    .loading-wrapper {
+      background-image: url("/assets/img/loader.svg");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-width: 190px;
+      min-height: 190px;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+  
+      .loading-spinner{
+        display: none;
+      }
+    }
+  }
+  
+  .bar.bar-profile {
+    background-color: #444;
+    height: 170px;
+  }
+  
+  .bar .profile {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding-top: 15px;
+  }
+  
+  .profile .name {
+    color: #FFFFFF;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+  }
+  

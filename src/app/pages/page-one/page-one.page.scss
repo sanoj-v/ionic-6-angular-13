@@ -1,0 +1,26 @@
+ion-card {
+  img {
+    width: 100%;
+    height: 7rem;
+  }
+  ion-card-header {
+    ion-card-subtitle {
+      font-size: 0.7em;
+      text-transform: initial;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+ion-col {
+  .vs-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Dashboard Page One</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button autoHide="false" menu="main-content"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-row>
+        <ion-col size="5">
+            <ion-card>
+                <img src="https://via.placeholder.com/120x112" />
+                <ion-card-header>
+                    <ion-card-subtitle>Estados unidos</ion-card-subtitle>
+                </ion-card-header>
+            </ion-card>
+        </ion-col>
+
+        <ion-col size="2">
+            <ion-badge color="primary" class="vs-title">
+                Vs
+            </ion-badge>
+        </ion-col>
+
+        <ion-col size="5">
+            <ion-card>
+                <img src="https://via.placeholder.com/120x112" />
+                <ion-card-header>
+                    <ion-card-subtitle>España</ion-card-subtitle>
+                </ion-card-header>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col size="12">
+            <ion-card>
+                <br>
+                <br>
+                <br>
+            </ion-card>
+        </ion-col>
+
+        <ion-col size="6" class="ion-no-padding" *ngFor="let item of [1,2,3,4]">
+            <ion-card>
+                <br>
+                <br>
+                {{item}}
+                <br>
+                <br>
+            </ion-card>
+        </ion-col>
+
+    </ion-row>
+</ion-content>
